@@ -13,6 +13,11 @@ public class Whip extends CondimentDecorator
 
     @Override
     public double cost() {
-        return beverage.cost() + .10;
+        if ("tall".equals(beverage.getSize()))
+            return beverage.cost() + .10;
+        else if("grande".equals(beverage.getSize()))
+            return beverage.cost() + .60;
+        else
+            return beverage.cost() + 1.10;
     }
 }
