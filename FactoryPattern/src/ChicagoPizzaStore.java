@@ -4,17 +4,31 @@
 public class ChicagoPizzaStore extends PizzaStore
 {
     @Override
-    Pizza createPizza(String type) {
+    protected Pizza createPizza(String type) {
+        PizzaIngredientFactory ingredientFactory =
+                new ChicagoPizzaIngredientPFactory();
+        Pizza pizza = null;
+
         if (type.equals("cheese"))
-            return new ChicagoStyleCheesePizza();
+        {
+            pizza = new CheesePizza(ingredientFactory);
+            pizza.setName("Chicago Style Cheese Pizza");
+        }
         else if (type.equals("veggie"))
-            return new ChicagoStyleVeggiePizza();
-        else if (type.equals("clam"))
-            return new ChicagoStyleClamPizza();
+        {
+            pizza = new VeggiePizza(ingredientFactory);
+            pizza.setName("Chicago Style Veggie Pizza");
+        }
+        else if (type.equals("clam")) {
+            pizza = new ClamPizza(ingredientFactory);
+            pizza.setName("Chicago Style Clam Pizza");
+        }
         else if (type.equals("pepperoni"))
-            return new ChicagoStylePepperoniPizza();
-        else
-            return null;
+        {
+            pizza = new PepperoniPizza(ingredientFactory);
+            pizza.setName("Chicago Style Pepperoni Pizza");
+        }
+        return pizza;
     }
 }
 
