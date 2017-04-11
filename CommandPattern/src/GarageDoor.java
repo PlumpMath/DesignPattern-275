@@ -11,11 +11,11 @@ public class GarageDoor {
 
     public void up()
     {
-        System.out.println(name + " Garage Door is Open");
+        System.out.println(name + "Garage Door is Open");
     }
 
     public void down()
     {
-        System.out.println(name + " Garage Door is Close");
+        System.out.println(name + "Garage Door is Close");
     }
 }
