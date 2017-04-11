@@ -12,21 +12,21 @@ public class Stereo {
 
     public void on()
     {
-        System.out.println(name + "stereo is on");
+        System.out.println(name + " stereo is on");
     }
 
     public void setCD()
     {
-        System.out.println(name + "stereo is set for CD input");
+        System.out.println(name + " stereo is set for CD input");
     }
 
     public void setVolume(int volume)
     {
-        System.out.println(name + "stereo volume set to " + volume);
+        System.out.println(name + " stereo volume set to " + volume);
     }
 
     public void off()
     {
-        System.out.println(name + "stereo is off");
+        System.out.println(name + " stereo is off");
     }
 }

@@ -10,11 +10,11 @@ public class Light {
 
     public void on()
     {
-        System.out.println(name + "light on");
+        System.out.println(name + " light on");
     }
 
     public void off()
     {
-        System.out.println(name + "light off");
+        System.out.println(name + " light off");
     }
 }

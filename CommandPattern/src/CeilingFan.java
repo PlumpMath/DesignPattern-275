@@ -11,11 +11,11 @@ public class CeilingFan {
 
     public void on()
     {
-        System.out.println(name + "ceiling fan is on high");
+        System.out.println(name + " ceiling fan is on high");
     }
 
     public void off()
     {
-        System.out.println(name + "ceiling fan is off");
+        System.out.println(name + " ceiling fan is off");
     }
 }
